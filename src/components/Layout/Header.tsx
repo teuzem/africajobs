@@ -58,6 +58,8 @@ export function Header() {
               {profile?.user_type === 'job_seeker' && (
                 <Link to="/recommendations" className="text-gray-700 hover:text-blue-600 font-medium">Recommandations</Link>
               )}
+              <Link to="/about" className="text-gray-700 hover:text-blue-600 font-medium">À propos</Link>
+              <Link to="/contact" className="text-gray-700 hover:text-blue-600 font-medium">Contact</Link>
             </nav>
 
             {/* Right side: User Menu */}

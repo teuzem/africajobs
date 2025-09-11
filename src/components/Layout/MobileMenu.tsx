@@ -13,7 +13,9 @@ import {
   HomeIcon,
   ChartPieIcon,
   PlusCircleIcon,
-  BuildingOffice2Icon
+  BuildingOffice2Icon,
+  InformationCircleIcon,
+  PhoneIcon
 } from '@heroicons/react/24/outline'
 
 interface MobileMenuProps {
@@ -44,6 +46,8 @@ export function MobileMenu({ open, setOpen }: MobileMenuProps) {
     { name: 'Entreprises', href: '/companies', icon: BuildingOffice2Icon },
     { name: 'Mes candidatures', href: '/applications', icon: DocumentTextIcon },
     { name: 'Emplois sauvegardés', href: '/saved-jobs', icon: BookmarkIcon },
+    { name: 'À propos', href: '/about', icon: InformationCircleIcon },
+    { name: 'Contact', href: '/contact', icon: PhoneIcon },
   ];
 
   const employerLinks = [
@@ -52,12 +56,16 @@ export function MobileMenu({ open, setOpen }: MobileMenuProps) {
     { name: 'Publier une offre', href: '/employer/jobs/new', icon: PlusCircleIcon },
     { name: 'Parcourir les emplois', href: '/jobs', icon: BriefcaseIcon },
     { name: 'Entreprises', href: '/companies', icon: BuildingOffice2Icon },
+    { name: 'À propos', href: '/about', icon: InformationCircleIcon },
+    { name: 'Contact', href: '/contact', icon: PhoneIcon },
   ];
 
   const guestLinks = [
     { name: 'Accueil', href: '/', icon: HomeIcon },
     { name: 'Parcourir les emplois', href: '/jobs', icon: BriefcaseIcon },
     { name: 'Entreprises', href: '/companies', icon: BuildingOffice2Icon },
+    { name: 'À propos', href: '/about', icon: InformationCircleIcon },
+    { name: 'Contact', href: '/contact', icon: PhoneIcon },
   ];
 
   const links = user 

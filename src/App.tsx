@@ -25,6 +25,7 @@ import { AboutPage } from './pages/static/AboutPage'
 import { ContactPage } from './pages/static/ContactPage'
 import { PrivacyPolicyPage } from './pages/static/PrivacyPolicyPage'
 import { TermsPage } from './pages/static/TermsPage'
+import { PressPage } from './pages/static/PressPage'
 import { Toaster } from 'react-hot-toast'
 import { CompaniesPage } from './pages/CompaniesPage'
 import { CompanyDetailPage } from './pages/CompanyDetailPage'
@@ -114,6 +115,7 @@ function AppRoutes() {
       {/* --- Static Pages --- */}
       <Route path="/about" element={<Layout><AboutPage /></Layout>} />
       <Route path="/contact" element={<Layout><ContactPage /></Layout>} />
+      <Route path="/press" element={<Layout><PressPage /></Layout>} />
       <Route path="/privacy" element={<Layout><PrivacyPolicyPage /></Layout>} />
       <Route path="/terms" element={<Layout><TermsPage /></Layout>} />
 
